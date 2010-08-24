@@ -37,7 +37,7 @@ our @EXPORT = qw(
 
 );
 
-our $VERSION = '1.00';
+our $VERSION = '1.04';
 
 # -----------------------------------------------
 
@@ -287,7 +287,7 @@ C<Rose::DBx::Bouquet> - Use a database schema to generate Rose-based source code
 	WineMaker
 	Processing template generator.pl.tmpl
 	Success
-	
+
 	Step 7: Run the second code generator:
 	shell> perl -Ilib scripts/run.rose.pl
 
@@ -320,17 +320,17 @@ C<Rose::DBx::Bouquet> - Use a database schema to generate Rose-based source code
 	shell> scripts/test.rose.pl
 
 	Step 10: This is the log (12 lines) from test.rose.pl:
-	Total grape record count: 63. 
-	Page: 1 of 'name like S%'. 
-	1: Sangiovese,Shiraz. 
-	2: Sauvignon,Semillon. 
-	3: Sav Blanc. 
-	4: Sav Blanc,Semillon. 
-	Page: 2 of 'name like S%'. 
-	1: Sav Blanc,Verdelho. 
-	2: Semillon. 
-	3: Shiraz. 
-	4: Sparkling Shiraz. 
+	Total grape record count: 63.
+	Page: 1 of 'name like S%'.
+	1: Sangiovese,Shiraz.
+	2: Sauvignon,Semillon.
+	3: Sav Blanc.
+	4: Sav Blanc,Semillon.
+	Page: 2 of 'name like S%'.
+	1: Sav Blanc,Verdelho.
+	2: Semillon.
+	3: Shiraz.
+	4: Sparkling Shiraz.
 	Page: 3 of 'name like S%'.
 
 	Step 11: Switch to the instructions for CGI::Application::Bouquet::Rose.
@@ -582,39 +582,13 @@ Do everything.
 
 See C<bin/rose.app.gen.pl> for an example of how to call C<run()>.
 
-=head1 Required Modules
-
-Some of these are only used by C<bin/rose.app.gen.pl> or C<Local::Wine>.
-
-=over 4
-
-=item Carp
-
-=item Config::IniFiles
-
-=item DBIx::Admin::CreateTable
-
-=item File::Path
-
-=item File::Spec
-
-=item FindBin::Real
-
-=item HTML::Template
-
-=item Local::Wine
-
-=item Text::CSV
-
-=back
-
 =head1 See also
 
 C<Rose::DBx::Garden>.
 
 =head1 Author
 
-C<Rose::DBx::Bouquet> was written by Ron Savage in 2008. [ron@savage.net.au]
+C<Rose::DBx::Bouquet> was written by Ron Savage I<E<lt>ron@savage.net.auE<gt>> in 2008.
 
 Home page: http://savage.net.au/index.html
 

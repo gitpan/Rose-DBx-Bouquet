@@ -7,11 +7,10 @@ lib/Rose/DBx/Bouquet/.htrose.bouquet.conf
 lib/Rose/DBx/Bouquet/Config.pm
 Makefile.PL
 MANIFEST			This list of files
-MANIFEST.SKIP
+META.yml
 README
 t/pod.t
 t/test.t
 templates/form.pm.tmpl
 templates/generator.pl.tmpl
 templates/manager.pm.tmpl
-META.yml
